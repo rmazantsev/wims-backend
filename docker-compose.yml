@@ -1,0 +1,35 @@
+version: "3.9"
+
+services:
+  wims-app:
+    container_name: wims-app
+    build:
+      context: ./WarehouseInventoryManagementSystem
+      dockerfile: Dockerfile
+    ports:
+      - "8000:80"
+    depends_on:
+      - wims-db
+    environment:
+      - ConnectionStrings:DefaultConnection=Host=wims-db:5432;Database=wims-db;Username=postgres;Password=postgres
+
+  wims-db:
+    container_name: wims-db
+    image: "postgres:15.3-bullseye"
+    restart: unless-stopped
+    environment:
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=postgres
+    logging:
+      options:
+        max-size: 10m
+        max-file: "3"
+    ports:
+      # external:internal
+      - "5445:5432"
+    volumes:
+      -  wims-postgres-volume:/var/lib/postgresql/data
+
+volumes:
+  wims-postgres-volume:
+  

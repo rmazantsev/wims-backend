@@ -1,0 +1,105 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+    <PropertyGroup>
+        <TargetFramework>net7.0</TargetFramework>
+        <Nullable>enable</Nullable>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <UserSecretsId>aspnet-WebApp-7B48E0F2-90C7-4DFC-8979-8F24DE8D9AA8</UserSecretsId>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <PackageReference Include="Asp.Versioning.Mvc.ApiExplorer" Version="7.0.0" />
+        <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="12.0.1" />
+        <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="7.0.5" />
+        <PackageReference Include="Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore" Version="7.0.5" />
+        <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="7.0.5" />
+        <PackageReference Include="Microsoft.AspNetCore.Identity.UI" Version="7.0.5" />
+        <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="7.0.5" />
+        <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="7.0.5" />
+        <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="7.0.5" />
+        <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="7.0.6" />
+        <PackageReference Include="Npgsql.EntityFrameworkCore.PostgreSQL" Version="7.0.4" />
+        <PackageReference Include="Swashbuckle.AspNetCore" Version="6.5.0" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <_ContentIncludedByDefault Remove="Views\ItemComponents\Create.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\ItemComponents\Delete.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\ItemComponents\Details.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\ItemComponents\Edit.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\ItemComponents\Index.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\Categories\Create.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\Categories\Delete.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\Categories\Details.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\Categories\Edit.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\Categories\Index.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\Home\Index.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\Home\Privacy.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\InventoryTransactions\Create.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\InventoryTransactions\Delete.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\InventoryTransactions\Details.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\InventoryTransactions\Edit.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\InventoryTransactions\Index.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\Items\Create.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\Items\Delete.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\Items\Details.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\Items\Edit.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\Items\Index.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\Locations\Create.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\Locations\Delete.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\Locations\Details.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\Locations\Edit.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\Locations\Index.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\Shared\Error.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\Shared\_Layout.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\Shared\_LoginPartial.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\Shared\_ValidationScriptsPartial.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\StoreInventories\Create.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\StoreInventories\Delete.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\StoreInventories\Details.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\StoreInventories\Edit.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\StoreInventories\Index.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\Stores\Create.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\Stores\Delete.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\Stores\Details.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\Stores\Edit.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\Stores\Index.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\Units\Create.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\Units\Delete.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\Units\Details.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\Units\Edit.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\Units\Index.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\WarehouseInventories\Create.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\WarehouseInventories\Delete.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\WarehouseInventories\Details.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\WarehouseInventories\Edit.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\WarehouseInventories\Index.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\Warehouses\Create.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\Warehouses\Delete.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\Warehouses\Details.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\Warehouses\Edit.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\Warehouses\Index.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\_ViewImports.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\_ViewStart.cshtml" />
+      <_ContentIncludedByDefault Remove="Areas\Identity\Pages\_ViewStart.cshtml" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <UpToDateCheckInput Remove="Views\ItemComponents\Create.cshtml" />
+      <UpToDateCheckInput Remove="Views\ItemComponents\Delete.cshtml" />
+      <UpToDateCheckInput Remove="Views\ItemComponents\Details.cshtml" />
+      <UpToDateCheckInput Remove="Views\ItemComponents\Edit.cshtml" />
+      <UpToDateCheckInput Remove="Views\ItemComponents\Index.cshtml" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\BLL.App\BLL.App.csproj" />
+      <ProjectReference Include="..\DAL.EF.App\DAL.EF.App.csproj" />
+      <ProjectReference Include="..\Helpers.Base\Helpers.Base.csproj" />
+      <ProjectReference Include="..\Public.DTO\Public.DTO.csproj" />
+    </ItemGroup>
+    
+    <PropertyGroup>
+        <GenerateDocumentationFile>true</GenerateDocumentationFile>
+    </PropertyGroup>
+</Project>
